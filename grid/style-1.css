@@ -50,6 +50,7 @@ footer{
 .img{
     width: 300px;
     height: auto;
+    border-radius: 5px;
 }
 .desc{
     font-size: 15px;
@@ -92,4 +93,25 @@ a{
     aside{
         display: none;
     }
+}
+
+.logoimg{
+    width: 150px;
+    border-radius: 100%;
+    margin: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sebo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.titulo2{
+    display: flex;
+    justify-content: center;
 }
