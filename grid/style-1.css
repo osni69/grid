@@ -7,6 +7,7 @@ body{
     "perna perna perna";
     grid-template-rows: 200px auto 150px;
     grid-template-columns: 200px auto auto;
+    margin: 0;
 }
 
 header{
@@ -84,34 +85,222 @@ a{
 }
 @media only screen and (max-width: 800px) {
     body {
-        grid-template-areas: "cabeca"
-                             "corpo"
-                             "perna";
+        grid-template-areas: 
+            "cabeca"
+            "corpo"
+            "perna";
         grid-template-columns: auto;
-        grid-template-rows: 150px auto 200px;
+        grid-template-rows: 110px auto 200px;
     }
-    aside{
+
+    aside {
         display: none;
     }
-}
-
-.logoimg{
-    width: 150px;
-    border-radius: 100%;
-    margin: 20px;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.sebo{
+    .logoimg{
+        display: none;
+    }
+    .carrinho{
+        display: none;
+    }
+    .sebo {
+        flex-direction: column;
     display: flex;
     align-items: center;
-    text-align: center;
-    position: relative;
+    justify-content: center;
+    margin: 20px;
+    }
+}
+
+.logoimg {
+    width: 150px;
+    border-radius: 100%;
+}
+
+.sebo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.carrinhoimg {
+    width: 150px;
+    transition: 0.5s;
+}
+
+.carrinhoimg:hover {
+    transform: scale(1.1);
 }
 
 .titulo2{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.cardcarrinho {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.carrinho {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.imgcarrinho {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.titulocarrinho {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.desccarrinho {
+    font-size: 13px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.precocarrinho {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-left: auto;
+}
+
+.maismenos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.maismenos button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.maismenos p {
+    min-width: 20px;
+    text-align: center;
+}
+
+.maismenos button:hover{
+    color: #989898;
+}
+
+.html{
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.html:hover{
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: bisque;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.fotos {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.imgfooter {
+    width: 100px;
+    height: auto;
+}
+
+#programa{
+    border-radius: 100%;
+}
+
+.produtodesc {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.imagemproduto {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.imagemproduto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+    transition: 0.5s;
+}
+.imagemproduto img:hover{
+    transform: scale(1.05);
+}
+
+.detalhes {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descc{
+    font-size: 1em;
+    color: #555;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.preco {
+    font-size: 2em;
+    font-weight: bold;
+    color: #70e535;
+}
+
+.carrobot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: rgb(255, 193, 116);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.4s;
+}
+
+.carrobot img {
+  width: 24px;
+  height: 24px;
+}
+
+.carrobot:hover {
+  background-color: rgb(255, 150, 22);
+  transform: scale(1.05);
 }
